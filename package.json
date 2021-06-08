@@ -19,9 +19,12 @@
       "typescript": "^2.3.4"
 
 
-
-
     },
+    
+
+      "engines": {
+        "node": "3.8.0"
+      },
     "devDependencies": {
       
       "@angular/language-service": "^4.0.0",
