@@ -34,7 +34,7 @@ actual Plan of Action:
 - learn and apply anglar 1.47 structure // 1 hour
 - basic functioning folders structure for TD-List with and first "input" // 30 minutes
   for adding notes(later search and filter notes))
-- deploy heroku now // 15 minutes
+- deploy heroku now // 15 minutes 
 - clear js functions, with notes: CRUD brain - I would like to add Tests() // 2 hours
   * Tests for crud in angular? code must exist already online (someone did it, must have). 
     - how to apply in my project?
