@@ -58,7 +58,10 @@
       "tslint": "~5.3.2"
       
     },
-  
+     
+      "engines" : { 
+        "node" : "15.14.0" 
+        },
     "repository": {},
     "main": "karma-test-shim.js"
   }
