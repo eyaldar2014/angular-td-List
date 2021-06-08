@@ -30,15 +30,13 @@ less abstructive:
 
 
 actual Plan of Action:
-- initialize&create git and heroku 
-- learn and apply anglar 1.47 structure
-- basic functioning folders structure for TD-List with and first "input"
+- initialize&create git and heroku // 10 minutes
+- learn and apply anglar 1.47 structure // 1 hour
+- basic functioning folders structure for TD-List with and first "input" // 30 minutes
   for adding notes(later search and filter notes))
-- clear js functions, with notes: CRUD brain - I would like to add Tests()
+- deploy heroku now // 15 minutes
+- clear js functions, with notes: CRUD brain - I would like to add Tests() // 2 hours
   * Tests for crud in angular? code must exist already online (someone did it, must have). 
     - how to apply in my project?
     - when to apply? after front-end is done, because it is secondary for basic angular learnnig. 
-- angular view (TD-List front end)
-
-
-anything else???
+- angular view and basic-full draft(TD-List front end) // 3 hours
