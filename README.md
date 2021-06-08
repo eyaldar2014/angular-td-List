@@ -3,7 +3,7 @@
 
 planning:
 
-to do list is made of several רכיבים
+to do list is made of several parts
 
 it has input that includes add and search options (search is a filter of existing notes)
 
