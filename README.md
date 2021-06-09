@@ -38,12 +38,10 @@ actual Plan of Action:
 - deploy heroku now // 15 minutes 
   after 2 and a half hours I failed uploading angular 1.4.7 to heroku.
 
-
-
-
-
 - clear js functions, with notes: CRUD brain - I would like to add Tests() // 2 hours
+
   * Tests for crud in angular? code must exist already online (someone did it, must have). 
     - how to apply in my project?
     - when to apply? after front-end is done, because it is secondary for basic angular learnnig. 
+    
 - angular view and basic-full draft(TD-List front end) // 3 hours

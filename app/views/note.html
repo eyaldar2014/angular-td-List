@@ -1,0 +1,38 @@
+<div ng-init="[readOnly=true, editMode=false, newContent=note.content, showTitle=true, showEditTitle=false, newTitle=note.title] "></div>
+
+</div>
+
+<div ng-show="showTitle">
+  <h2 ng-mousedown="[showTitle=false, showEditTitle= true]">{{ note.title }}'s Details</h2>
+</div>
+
+<div ng-show="showEditTitle">
+  <div>
+    <input type="text" ng-model="newTitle" />
+    <input type="button" value="done" ng-click="[showEditTitle=false, showTitle=true, note.title=newTitle]"/>
+  </div>
+</div>
+
+</br></br>
+
+<span>Content:</span>
+
+<div ng-show="readOnly">
+  <p>{{ note.content }}</p>
+
+  </br></br>
+  <input type="button" ng-click="editNote(note.content)" value="edit note" />
+</div>
+
+
+<div ng-show="editMode">
+  <input type="text" ng-model="newContent" />
+  </br></br>
+
+  <input type="button" ng-click="saveNote(newContent, note.id)" value="save" />
+  <input type="button" ng-click="stopEditNote(note.content, note.id)" value="cancel" />
+</div>
+
+</br></br>
+
+<button><a href="#/}}">back to notes</a></button>

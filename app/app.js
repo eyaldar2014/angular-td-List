@@ -8,6 +8,10 @@
                 controller: 'NotesController', 
                 templateUrl: 'app/views/notes.html' 
             })
+            .when('/note-details/:noteId', {
+                controller: 'NoteController', 
+                templateUrl: 'app/views/note.html' 
+            })
             .otherwise( { redirectTo: '/' } );
     });
     
