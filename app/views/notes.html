@@ -1,54 +1,49 @@
-<!-- <div ng-init=""> -->
+<div ng-init=" [noteTitle=''] ">
 
-<h2>{{ appSettings.title }}</h2>
-
-
-<span>Note Title:</span>
-
-<input type="text" ng-model="noteTitle" />
-</br></br>
-<span>Your Title: {{ noteTitle }}</span>
-</br></br>
-Click to Add :
-<input type="button" ng-click="addNote(noteTitle)" value="add title" />
+  <h2>{{ appSettings.title }}</h2>
 
 
-</br></br>
-<h3>Your Notes:</h3>
+  <span>Note Title:</span>
 
-search: <input type="text" ng-model="notesFilter.title" />
-</br></br>
+  <input type="text" ng-model="noteTitle" />
+  </br></br>
+  <span>Your Title: {{ noteTitle }}</span>
+  </br></br>
+  Click to Add :
+  <input type="button" ng-click="addNote(noteTitle)" value="add title" />
 
-<div ng-model="sortContainer">
-  SORT BY :
-  <button><span ng-click="doSort('title')">Title</span></button>
-  <button><span ng-click="doSort('date')">Date</span></button>
-</div>
-</br>
-<div class="notesContainer">
-  <div ng-repeat="note in notes | filter:notesFilter | orderBy:sortBy:reverse">
+
+  </br></br>
+  <h3>Your Notes:</h3>
+
+  search: <input type="text" ng-model="notesFilter.title" />
+  </br></br>
+
+  <div ng-model="sortContainer">
+    SORT BY :
+    <button><span ng-click="doSort('title')">Title</span></button>
+    <button><span ng-click="doSort('date')">Date</span></button>
+  </div>
   </br>
-  <div class="noteContainer">
-      <h4>Note Title: {{ note.title | uppercase }}</h4>
+  <div class="notesContainer">
+    <div ng-repeat="note in notes | filter:notesFilter | orderBy:sortBy:reverse track by note.id">
+      </br>
+      <div class="noteContainer">
+        <h4>Note Title: {{ note.title | uppercase }}</h4>
 
-      <span>Note Created: </span>
-      {{ note.date | date: "yyyy-MM-ddTHH:mm:ss" }}
-      </br></br>
-      Options :
-      <input type="button" ng-click="deleteNote(note.id)" value="delete note" />
-      <button ng-click="routeToNote(note.id)"><a href="#/note-details/{{ note.key }}">View Details</a></button>
+        <span>Note Created: </span>
+        {{ note.date | date: "yyyy-MM-ddTHH:mm:ss" }}
+        </br></br>
+        Options :
+        <input type="button" ng-click="deleteNote(note.id)" value="delete note" />
+        <button ng-click="routeToNote(note.id)"><a href="#/note-details/{{ note.key }}">View Details</a></button>
+      </div>
+      </br>
     </div>
-    </br>
+
   </div>
 
+  </br>
+  you notes total: {{ notes.length}}
+
 </div>
-
-</br>
-you notes total: {{ notes.length}}
-
-
-
-
-
-
-<!-- </div> -->

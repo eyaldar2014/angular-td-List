@@ -9,7 +9,7 @@
 <div ng-show="showEditTitle">
   <div>
     <input type="text" ng-model="newTitle" />
-    <input type="button" value="done" ng-click="[showEditTitle=false, showTitle=true, note.title=newTitle]"/>
+    <input type="button" value="done" ng-click="[showEditTitle=false, showTitle=true, note.title = newTitle, saveTitle(newTitle, note.id)]"/>
   </div>
 </div>
 

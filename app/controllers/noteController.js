@@ -2,6 +2,11 @@
   (function () {
 
     const NoteController = function ($scope, NotesFactory, $routeParams) {
+
+      $scope.saveTitle = function(newTitle, currentNoteId){
+        NotesFactory.saveTitle(newTitle, currentNoteId)
+      }
+      
   
       $scope.notes = NotesFactory.getNotes();
 
